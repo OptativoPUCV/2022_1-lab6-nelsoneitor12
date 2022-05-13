@@ -236,3 +236,22 @@ Thu May 12 20:30:34 HSP 2022:
  tests:  0|5
 total_score: 0/70
 990ce9f
+Fri May 13 00:56:28 HSP 2022: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function 'is_valid':
+sudoku.c:56:46: error: expected ')' before ']' token
+   56 |           printf("%d", columna[n->sudo[i][j]]]);
+      |                                              ^
+      |                                              )
+sudoku.c:56:46: error: expected ';' before ']' token
+   56 |           printf("%d", columna[n->sudo[i][j]]]);
+      |                                              ^
+      |                                              ;
+sudoku.c:56:46: error: expected statement before ']' token
+sudoku.c:56:47: error: expected statement before ')' token
+   56 |           printf("%d", columna[n->sudo[i][j]]]);
+      |                                               ^
+Compilation failed
+8663664
