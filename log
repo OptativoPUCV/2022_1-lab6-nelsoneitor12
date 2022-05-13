@@ -156,3 +156,26 @@ test.c:11:1: error: expected identifier or '(' before '}' token
 cc1.exe: all warnings being treated as errors
 Compilation failed
 490431c
+Thu May 12 20:28:31 HSP 2022: 
+test.c:8:40: error: 'str' undeclared here (not in a function)
+    8 |     char * aux = (char *)malloc(strlen(str) + 1);
+      |                                        ^~~
+test.c:9:5: error: data definition has no type or storage class [-Werror]
+    9 |     strcpy(aux, str);
+      |     ^~~~~~
+test.c:9:5: error: type defaults to 'int' in declaration of 'strcpy' [-Werror=implicit-int]
+test.c:9:5: error: parameter names (without types) in function declaration [-Werror]
+test.c:9:5: error: conflicting types for 'strcpy'
+In file included from test.c:3:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: previous declaration of 'strcpy' was here
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+test.c:10:5: error: expected identifier or '(' before 'return'
+   10 |     return aux;
+      |     ^~~~~~
+test.c:11:1: error: expected identifier or '(' before '}' token
+   11 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c1b33cd
