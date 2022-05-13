@@ -225,3 +225,10 @@ test.c:11:1: error: expected identifier or '(' before '}' token
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d7a2b7e
+Thu May 12 20:29:33 HSP 2022: 
+test.c:7:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    7 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0241a80
