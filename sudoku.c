@@ -64,9 +64,9 @@ int is_valid(Node* n){
           k=n->sudo[i][j];
           if(fila[k-1]==0) fila[k-1]=k;
           else if(fila[k-1]==k) return 0;
-          printf("%d", fila[k-1]);
+          //printf("%d", fila[k-1]);
       }
-      printf("\n");
+      //printf("\n");
     }
     for(i=0;i<9;i+=3){
       for(j=0;j<9;j+=3){
