@@ -52,8 +52,13 @@ int is_valid(Node* n){
       columna=(int*) calloc(9, sizeof(int));
       for(j=0;j<9;j++){
            printf("%d", n->sudo[i][j]);
-          if(columna[n->sudo[i][j]]==n->sudo[i][j]) return 0;
-          else if(columna[n->sudo[i][j]]==0) columna[n->sudo[i][j]]=n->sudo[i][j];
+          if(columna[n->sudo[i][j]]==(int) n->sudo[i][j]){
+
+          return 0;
+          }
+          else{
+            if(columna[n->sudo[i][j]]==0) columna[n->sudo[i][j]]=n->sudo[i][j];
+          }
       }
       printf("\n");
     }
