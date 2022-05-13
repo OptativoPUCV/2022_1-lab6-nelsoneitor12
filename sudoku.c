@@ -52,7 +52,7 @@ int is_valid(Node* n){
       columna=(int*) calloc(9, sizeof(int));
       for(j=0;j<9;j++){
           if(columna[n->sudo[i][j]]!=n->sudo[i][j]) columna[n->sudo[i][j]]=n->sudo[i][j];
-          else if(fila[n->sudo[i][j]]==n->sudo[i][j]) return 0;
+          else if(columna[n->sudo[i][j]]==n->sudo[i][j]) return 0;
       }
     }
     for(j=0;j<9;j++){
