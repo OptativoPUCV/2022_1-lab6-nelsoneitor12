@@ -97,6 +97,7 @@ List* get_adj_nodes(Node* n){
                 Node* adj=copy(n);
                 pushBack(lista, adj);
             }
+            printf("pasando por el for del adj\n");
           }
           n->sudo[i][j]=0;
           return lista;
