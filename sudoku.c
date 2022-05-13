@@ -59,7 +59,7 @@ int is_valid(Node* n){
       fila=(int*) calloc(9, sizeof(int));
       for(i=0;i<9;i++){
           if(fila[n->sudo[i][j]]!=n->sudo[i][j]) fila[n->sudo[i][j]]=n->sudo[i][j];
-          else if(fila[k]==n->sudo[i][j]) return 0;
+          else if(fila[n->sudo[i][j]]==n->sudo[i][j]) return 0;
       }
     }
     for(i=0;i<9;i+=3){
