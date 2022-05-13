@@ -61,7 +61,7 @@ int is_valid(Node* n){
       for(i=0;i<9;i++){
           if(fila[n->sudo[i][j]]!=n->sudo[i][j]) fila[n->sudo[i][j]]=n->sudo[i][j];
           else if(fila[n->sudo[i][j]]==n->sudo[i][j]) return 0;
-          printf("%d", columna[n->sudo[i][j]]);
+          printf("%d", fila[n->sudo[i][j]]);
 
       }
       printf("\n");
