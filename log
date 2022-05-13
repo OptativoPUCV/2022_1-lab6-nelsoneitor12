@@ -255,3 +255,9 @@ sudoku.c:56:47: error: expected statement before ')' token
       |                                               ^
 Compilation failed
 8663664
+Fri May 13 00:56:44 HSP 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+8145ee8
