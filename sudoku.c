@@ -99,7 +99,7 @@ List* get_adj_nodes(Node* n){
             }
             printf("pasando por el for del adj\n");
           }
-          n->sudo[i][j]=0;
+          //n->sudo[i][j]=0;
           return lista;
         }
       }
