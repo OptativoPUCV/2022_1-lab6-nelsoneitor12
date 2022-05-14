@@ -69,8 +69,8 @@ int is_valid(Node* n){
       //printf("\n");
     }
     for(i=0;i<9;i+=3){
+      submatriz=(int*) calloc(9, sizeof(int));
       for(j=0;j<9;j+=3){
-        submatriz=(int*) calloc(9, sizeof(int));
         for (k=i;k<i+3;k++)
         {
           for(l=j;j<j+3;l++){
