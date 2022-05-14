@@ -91,14 +91,17 @@ List* get_adj_nodes(Node* n){
     for(i=0;i<9;i++){
       for(j=0;j<9;j++){
         if(n->sudo[i][j]==0){
+          printf("supuestamente avanzo de columna\n");
           for(k=1;k<10;k++){
             n->sudo[i][j]=k;
             if (is_valid(n))
             {
               Node *adj=copy(n);
               pushBack(lista, adj);
+              printf("esValido\n");
             }
           }
+          printf("salio del if\n");
           n->sudo[i][j]=0;
         }
       }
