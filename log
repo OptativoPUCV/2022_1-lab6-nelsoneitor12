@@ -405,3 +405,9 @@ sudoku.c:92:22: error: 'k' may be used uninitialized in this function [-Werror=m
 cc1.exe: all warnings being treated as errors
 Compilation failed
 61053b1
+Fri May 13 21:54:04 HSP 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  3|4
+total_score: 20/70
+8fa4cd9
