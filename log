@@ -345,3 +345,23 @@ Fri May 13 21:26:45 HSP 2022:
  tests:  0|5
 total_score: 0/70
 4421a29
+Fri May 13 21:28:27 HSP 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function 'is_valid':
+sudoku.c:71:7: error: expected expression before 'for'
+   71 |     7*for(i=0;i<9;i+=3){
+      |       ^~~
+sudoku.c:50:15: error: unused variable 'l' [-Werror=unused-variable]
+   50 |     int i,j,k,l;
+      |               ^
+sudoku.c:49:10: error: unused variable 'submatriz' [-Werror=unused-variable]
+   49 |     int *submatriz;
+      |          ^~~~~~~~~
+sudoku.c:84:1: error: control reaches end of non-void function [-Werror=return-type]
+   84 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+34f4ad5
