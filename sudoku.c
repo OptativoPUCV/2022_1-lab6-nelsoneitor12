@@ -74,7 +74,7 @@ int is_valid(Node* n){
         for(l=i;l<3;l++){
           for(m=j;m<3;m++){
             k=n->sudo[l][m];
-            if(submatriz[k-1]==k) return 0;
+            if(submatriz[k-1]==k && submatriz[k-1]!=0) return 0;
             submatriz[k-1]=k;
           }
         }
