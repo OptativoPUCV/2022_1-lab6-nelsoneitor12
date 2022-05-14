@@ -95,11 +95,11 @@ List* get_adj_nodes(Node* n){
             if(is_valid(n)){
                 Node* adj=copy(n);
                 pushBack(lista, adj);
+                printf("esValido\n");
                 break;
             }
             printf("pasando por el for del adj\n");
           }
-          //n->sudo[i][j]=0;
           return lista;
         }
       }
