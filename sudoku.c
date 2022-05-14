@@ -47,7 +47,7 @@ int is_valid(Node* n){
     int *fila;
     int *columna;
     //int *submatriz;
-    int i,j,k,l;
+    int i,j,k;
     for(i=0;i<9;i++){
       columna=(int*) calloc(9, sizeof(int));
       for(j=0;j<9;j++){

@@ -376,3 +376,9 @@ sudoku.c:50:15: error: unused variable 'l' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 3f98854
+Fri May 13 21:29:03 HSP 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 20/70
+017a10b
