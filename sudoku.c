@@ -68,7 +68,7 @@ int is_valid(Node* n){
       }
       //printf("\n");
     }
-    for(i=0;i<9;i+=3){
+    /*for(i=0;i<9;i+=3){
       submatriz=(int*) calloc(9, sizeof(int));
       for(j=0;j<9;j+=3){
         for (k=i;k<i+3;k++)
@@ -80,7 +80,7 @@ int is_valid(Node* n){
           }
         }  
       }
-    }
+    }*/
     return 1;
 }
 
@@ -88,6 +88,7 @@ int is_valid(Node* n){
 List* get_adj_nodes(Node* n){
     List* lista=createList();
     int i,j,k;
+    Node *adj;
     for(i=0;i<9;i++){
       for(j=0;j<9;j++){
         if(n->sudo[i][j]==0){
@@ -96,7 +97,7 @@ List* get_adj_nodes(Node* n){
             n->sudo[i][j]=k;
             if (is_valid(n))
             {
-              Node *adj=copy(n);
+              adj=copy(n);
               pushBack(lista, adj);
               printf("esValido\n");
             }
