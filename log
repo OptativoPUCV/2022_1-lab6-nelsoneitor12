@@ -394,3 +394,14 @@ Fri May 13 21:49:43 HSP 2022:
  tests:  3|4
 total_score: 20/70
 d4988a1
+Fri May 13 21:53:44 HSP 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function 'get_adj_nodes':
+sudoku.c:92:22: error: 'k' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   92 |         if(n->sudo[i][k]==0){
+      |            ~~~~~~~~~~^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+61053b1
