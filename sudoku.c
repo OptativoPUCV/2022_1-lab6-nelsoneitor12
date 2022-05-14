@@ -46,8 +46,8 @@ void print_node(Node* n){
 int is_valid(Node* n){
     int *fila;
     int *columna;
-    //int *submatriz;
-    int i,j,k;
+    int *submatriz;
+    int i,j,k,l,s;
     for(i=0;i<9;i++){
       columna=(int*) calloc(9, sizeof(int));
       for(j=0;j<9;j++){
@@ -68,18 +68,19 @@ int is_valid(Node* n){
       }
       //printf("\n");
     }
-    /*for(i=0;i<9;i+=3){
+    for(i=0;i<9;i+=3){
       for(j=0;j<9;j+=3){
         submatriz=(int*) calloc(9, sizeof(int));
         for (k=i;k<i+3;k++)
         {
           for(l=j;j<j+3;l++){
-            if(submatriz[n->sudo[i][j]]==n->sudo[i][j]) return 0;
-            else if(submatriz[n->sudo[i][j]]==0) submatriz[n->sudo[i][j]]=n->sudo[i][j];
+            s=n->sudo[i][j];
+            if(submatriz[s-1]==s) return 0;
+            else if(submatriz[s-1]==0) submatriz[s-1]=s;
           }
         }  
       }
-    }*/
+    }
     return 1;
 }
 
