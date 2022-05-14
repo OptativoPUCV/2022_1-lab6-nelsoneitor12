@@ -90,9 +90,8 @@ List* get_adj_nodes(Node* n){
     for(i=0;i<9;i++){
       for(j=0;j<9;j++){
         if(n->sudo[i][j]==0){
-          printf(" el numero =0 es %d\n\n", n->sudo[i][j]);
           for(k=1;k<10;k++){
-            n->sudo[i][k]=k;
+            n->sudo[i][j]=k;
             if(is_valid(n)){
                 Node* adj=copy(n);
                 pushBack(lista, adj);
