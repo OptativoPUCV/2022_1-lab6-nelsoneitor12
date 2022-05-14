@@ -69,7 +69,7 @@ int is_valid(Node* n){
       //printf("\n");
     }
     for(i=0;i<9;i+=3){
-      for(j=0;j<9;j+3){
+      for(j=0;j<9;j+=3){
         submatriz=calloc(9, sizeof(int));
         for(l=i;l<3;l++){
           for(m=j;m<3;m++){
