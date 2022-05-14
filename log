@@ -365,3 +365,14 @@ sudoku.c:84:1: error: control reaches end of non-void function [-Werror=return-t
 cc1.exe: all warnings being treated as errors
 Compilation failed
 34f4ad5
+Fri May 13 21:28:53 HSP 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function 'is_valid':
+sudoku.c:50:15: error: unused variable 'l' [-Werror=unused-variable]
+   50 |     int i,j,k,l;
+      |               ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3f98854
