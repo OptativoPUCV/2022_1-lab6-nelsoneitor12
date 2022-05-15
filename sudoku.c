@@ -125,8 +125,9 @@ Node* DFS(Node* initial, int* cont){
         aux=next(adj);
         (*cont)+=1;
      }
+     free(n);
   }
-  printf("%d", *cont);
+  printf("el contador es:%d", *cont);
   return NULL;
 }
 
