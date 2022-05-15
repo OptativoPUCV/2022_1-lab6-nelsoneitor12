@@ -92,7 +92,6 @@ List* get_adj_nodes(Node* n){
               pushBack(lista, adj);
             }
           }
-          printf("salio del if\n");
           n->sudo[i][j]=0;
           return lista;
         }
