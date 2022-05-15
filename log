@@ -684,3 +684,9 @@ sudoku.c:126:9: error: value computed is not used [-Werror=unused-value]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 55cc093
+Sun May 15 06:38:37 HSP 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|1
+total_score: 60/70
+3494a55

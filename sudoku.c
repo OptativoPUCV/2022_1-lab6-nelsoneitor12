@@ -123,7 +123,7 @@ Node* DFS(Node* initial, int* cont){
      while(aux){
         push(S,aux);
         aux=next(adj);
-        *cont++;
+        (*cont)+=1;
      }
   }
   printf("%d", *cont);
