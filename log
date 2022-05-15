@@ -633,3 +633,23 @@ Sun May 15 06:33:57 HSP 2022:
  tests:  8|1
 total_score: 60/70
 1c3cf75
+Sun May 15 06:35:58 HSP 2022: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function 'DFS':
+sudoku.c:129:12: error: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Werror=format=]
+  129 |   printf("%d", cont);
+      |           ~^   ~~~~
+      |            |   |
+      |            int int *
+      |           %n
+sudoku.c:129:12: error: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Werror=format=]
+  129 |   printf("%d", cont);
+      |           ~^   ~~~~
+      |            |   |
+      |            int int *
+      |           %n
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e843170
