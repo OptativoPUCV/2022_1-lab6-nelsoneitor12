@@ -653,3 +653,23 @@ sudoku.c:129:12: error: format '%d' expects argument of type 'int', but argument
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e843170
+Sun May 15 06:36:50 HSP 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function 'DFS':
+sudoku.c:129:12: error: format '%i' expects argument of type 'int', but argument 2 has type 'int *' [-Werror=format=]
+  129 |   printf("%i", cont);
+      |           ~^   ~~~~
+      |            |   |
+      |            int int *
+      |           %n
+sudoku.c:129:12: error: format '%i' expects argument of type 'int', but argument 2 has type 'int *' [-Werror=format=]
+  129 |   printf("%i", cont);
+      |           ~^   ~~~~
+      |            |   |
+      |            int int *
+      |           %n
+cc1.exe: all warnings being treated as errors
+Compilation failed
+491986e
