@@ -50,23 +50,15 @@ int is_valid(Node* n){
     int i,j,k, l, m;
     for(i=0;i<9;i++){
       columna=(int*) calloc(9, sizeof(int));
+      fila=(int*) calloc(9, sizeof(int));
       for(j=0;j<9;j++){
            k=n->sudo[i][j];
+           l=n->sudo[j][i];
+          if(fila[l-1]==l && fila[l-1]!=0) return 0;
+            fila[l-1]=l;
           if(columna[k-1]==k && columna[k-1]!=0) return 0;
             columna[k-1]=k;
-          printf("%d", n->sudo[i][j]);
       }
-      printf("\n");
-    }
-    for(j=0;j<9;j++){
-      fila=(int*) calloc(9, sizeof(int));
-      for(i=0;i<9;i++){
-          k=n->sudo[i][j];
-          if(fila[k-1]==k && fila[k-1]!=0) return 0;
-            fila[k-1]=k;
-          //printf("%d", fila[k-1]);
-      }
-      //printf("\n");
     }
     for(i=0;i<9;i+=3){
       for(j=0;j<9;j+=3){
